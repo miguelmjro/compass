@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">CompasStation</string>
+    <string name="hello_world">Compass Station</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Compasss Station</string>
+    <string name="title_activity_compass__interface">Compass</string>
+
+</resources>
