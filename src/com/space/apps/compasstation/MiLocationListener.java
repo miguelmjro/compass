@@ -15,12 +15,14 @@ public class MiLocationListener implements LocationListener {
 	}
 	
 	public void onLocationChanged(Location loc){
-		found=true;
 		lat=loc.getLatitude();
 		lon=loc.getLongitude();
 		String coordenadas = "Mis coordenadas son: " + "Latitud = " + loc.getLatitude() + "Longitud = " + loc.getLongitude();
-		Toast.makeText( com.getContext(),coordenadas,Toast.LENGTH_LONG).show();
+		if(!found){
+			Toast.makeText( com.getContext(),coordenadas,Toast.LENGTH_LONG).show();
 		}
+		found=true;
+	}
 	public void onProviderDisabled(String provider){
 		//Toast.makeText( com.getContext(),"Gps Desactivado",Toast.LENGTH_SHORT ).show();
 	}

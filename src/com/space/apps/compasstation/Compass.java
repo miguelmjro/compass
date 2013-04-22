@@ -93,7 +93,7 @@ public class Compass extends View implements SensorEventListener{
           if(donde.found&&ISS){
         	  mylat=donde.lat;
         	  mylon=donde.lon;
-        	  satelite.setAngulo(flecha.getAngle(mylat, mylon, latISS, lonISS));
+        	  satelite.setAngulo(flecha.getAngle(mylat, mylon, latISS, lonISS)-giro);
         	  satelite.dibujaGrafico(canvas);
         	  if(ISS2){
         		  ISS2=false;
